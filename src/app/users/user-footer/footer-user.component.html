@@ -1,0 +1,9 @@
+<footer class="footer">
+    <ul class="filters">
+        <li *ngFor="let filter of filters" (click)="changeFilter(filter)">
+            <a [class.selected]="filter === currentFilter" href="#/">{{filter | titlecase}}</a>
+        </li>
+    </ul>
+    <span class="todo-count"><strong>{{actives}} </strong>Active users</span>
+    <span class="todo-count"><strong>{{unactives}} </strong>Unactive users</span>
+</footer>

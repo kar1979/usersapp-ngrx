@@ -1,0 +1,3 @@
+<ul class="todo-list">
+    <app-item-user *ngFor="let user of users | defFilter: currentFilter" [user]="user"></app-item-user>
+</ul>

@@ -1,0 +1,9 @@
+<header class="header">
+    <h1>Users Status</h1>
+    <input
+        class="new-todo"
+        placeholder="New user name"
+        [formControl]="nameInput"
+        (keyup.enter)="addUser()"
+        autofocus />
+</header>
